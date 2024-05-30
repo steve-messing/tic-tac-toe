@@ -1,13 +1,15 @@
 import React from "react";
-import Button from "react-bootstrap/Button"; 
+import Button from "react-bootstrap/Button";
+import Card from "react-bootstrap/Card"
+import "./styles.css";
 
 const square = "square";
 
 function Square({value, onSquareClick}) {
   return (
-    <Button className={square} onClick={onSquareClick}>
+    <button className={square} onClick={onSquareClick}>
       {value}
-    </Button>
+    </button>
   );
 }  
 
@@ -81,10 +83,10 @@ function declareWinner(squares) {
 
 function TicTacToe() {
   return (
-    <div className="container">
+    <Card style={{alignContent: "center"}}>
       <h1>Tic Tac Toe</h1>
       <Board />
-    </div>
+    </Card>
   );
 }
 

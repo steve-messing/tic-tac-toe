@@ -1,0 +1,31 @@
+.square {
+    height: 40px;
+    width: 40px;
+    border-radius: 0;
+    background: white;
+    border: 1px solid black;
+    margin-top: -1px;
+    margin-left: -1px;
+    float: left;
+  }
+  
+  .board {
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+  }
+
+  .btn-primary {
+    width: 117px;
+    margin-left: -1px;
+    align-self: center;
+  }
+
+  .card {
+    padding: 30px;  
+    text-align: center;
+    align-content: center;
+    width: 300px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
