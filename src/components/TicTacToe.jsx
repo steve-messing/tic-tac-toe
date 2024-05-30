@@ -1,12 +1,13 @@
 import React from "react";
+import Button from "react-bootstrap/Button"; 
 
 const square = "square";
 
 function Square({value, onSquareClick}) {
   return (
-    <button className={square} onClick={onSquareClick}>
+    <Button className={square} onClick={onSquareClick}>
       {value}
-    </button>
+    </Button>
   );
 }  
 
@@ -58,7 +59,7 @@ function Board() {
         <Square value={squares[8]} onSquareClick={() => handleClick(8)}/>
       </div>
     </div>
-      <button onClick={handleReset}>Reset Board</button>
+      <Button onClick={handleReset}>Reset Board</Button>
     </>
   );
 }
